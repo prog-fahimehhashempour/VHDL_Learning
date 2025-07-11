@@ -39,7 +39,7 @@ It does not give us information about the function or internal structure of the 
 
 <span style="color:blue">**Architecture**:</span>
 
-- In this section, the function and/or internal structure of the circuit is defined.
+In this section, the function and/or internal structure of the circuit is defined.
 An example of this explanation is given in the multiplexer example.
 After simulation in Vivado software, the resulting waveform is as follows:
 <br>
@@ -60,7 +60,7 @@ After simulation in Vivado software, the resulting waveform is as follows:
 
 - A signal can have different types. In VHDL, to overcome the limitation of the limited number of values ​​and to allow other values ​​such as high impedance and undefined value to be represented, another type called <span style="color:blue">_**STD_LOGIC**_</span> has been defined. Signals defined as this type can represent 9 different values.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./3.full_adder/result.JPG)
 
@@ -78,7 +78,7 @@ Target_signal <= expression WHEN Boolean_condition ELSE
 - The <span style="color:blue">_**Target_signal**_</span> signal receives the value of the first expression whose condition is true, and if no condition is true, it receives the value of the last expression without the specified condition. If multiple conditions are true, the value of the expression corresponding to the first true condition is assigned.
 - In this code, the state of the selection inputs, <span style="color:blue">_**S0**_</span> and <span style="color:blue">_**S1**_</span> , is checked as a combination of two comparison expressions using the and operator. This example shows that logical operators such as and, or, etc. can also be used to combine Boolean comparison expressions. Any Boolean expression can be used instead of a condition in a when-else statement or any other conditional statement.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./4.MUX41_when/result.JPG)
 
@@ -91,7 +91,7 @@ Target_signal <= expression WHEN Boolean_condition ELSE
 - In VHDL, in addition to logical operators, arithmetic operators (+, -, *, /, mod, rem, **, and abs) are defined for addition, subtraction, multiplication, division, unsigned remainder, signed remainder, exponent, and absolute value operations, respectively. 
 - In addition, comparison operators (=, /=, <=, >, >=) are also defined for equality, inequality, less than, less than equal, greater than, and greater than equal, respectively. Since we often use std_logic_vector to model multi-bit signals, it is necessary to use one of the <span style="color:blue">_**std_logic_unsigned**_</span> or <span style="color:blue">_** std_logic_signed**_</span> packages in addition to the <span style="color:blue">_**std_logic_1164**_</span>  package to perform arithmetic and comparison operations on them. The first package is used for unsigned calculations, and the second package is used for signed calculations.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./5.Compare_8Bit/result.JPG)
 
@@ -102,7 +102,7 @@ Target_signal <= expression WHEN Boolean_condition ELSE
 - Whether numbers are signed or not is important in multiplication, division, and comparison operations.
 In multiplication, the length of the product is always equal to the sum of the lengths of the two input numbers.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./6.Multiplier_8bit_signed/result.JPG)
 
@@ -113,7 +113,7 @@ In multiplication, the length of the product is always equal to the sum of the l
 - In this example, you see the description of an 8-bit unsigned adder that also has a carry input and an output. In this description, a 9-bit internal signal called <span style="color:blue">_**INTSUM**_</span>  is defined. First, the sum is placed in it. Then the lower 8 bits are transferred to the SUM output and the ninth bit is transferred to the <span style="color:blue">_**COUT**_</span>  output.
 - In the first assignment statement, all three inputs are expanded to 9 bits using the concatenation operator (&) by appending a number of zeros. Then, the addition operation is performed on them.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./7.Adder_8bit_unsigned/result.JPG)
 
@@ -149,7 +149,7 @@ aa <= NOT aa AFTER 20 us WHEN NOW <= 1000 us ELSE ‘0’;
 bb <= NOT aa AFTER 50 us WHEN NOW <= 1000 us ELSE ‘0’;
 ```
 
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./9.NANDGate_testbench/result.JPG)
 
@@ -163,7 +163,7 @@ bb <= NOT aa AFTER 50 us WHEN NOW <= 1000 us ELSE ‘0’;
 a <= a+1 AFTER 20 us WHEN NOW <= 1000 us ELSE ‘00000000’;
 b <= b+1 AFTER 50 us WHEN NOW <= 1000 us ELSE ‘00000000’;
 ```
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./10.Adder_8bit_test/result.JPG)
 
@@ -173,7 +173,7 @@ b <= b+1 AFTER 50 us WHEN NOW <= 1000 us ELSE ‘00000000’;
 
 - Structural modeling allows for hierarchical design, such that each entity being described can be used as a component in describing another entity. The hierarchical design method is often used in designs that can be expanded through iteration.
 
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./11.Adder_4bit_structural/result.JPG)
 
@@ -194,7 +194,7 @@ b <= b+1 AFTER 50 us WHEN NOW <= 1000 us ELSE ‘00000000’;
 - Using the <span style="color:blue">_**Generic**_</span>   command, a circuit can be defined parametrically and then the values ​​of the parameters can be specified when creating the instance. Time delays, data bus width and signal width, dimensions and number of components forming the circuit are some of the things that can be defined parametrically using the  <span style="color:blue">_**Generic**_</span> command.
 - In this example, an AND gate is defined using the Generic statement with three parameters: <span style="color:blue">_**rise**_</span> , <span style="color:blue">_**fall**_</span> , and <span style="color:blue">_**load**_</span> . In the Architecture section, these parameters are used to specify the rise and fall delays.
 
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./13.ADN2_diff_delay/result.JPG)
 
@@ -204,7 +204,7 @@ b <= b+1 AFTER 50 us WHEN NOW <= 1000 us ELSE ‘00000000’;
 
 - One of the capabilities of the <span style="color:blue">_**Generic**_</span>  command is to define the circuit dimensions parametrically. For example, you can design an n-bit multiplier and set the value of n to an arbitrary number when using it, depending on your needs.
 
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./14.Multiplier_nbit/result.JPG)
 
