@@ -50,7 +50,7 @@ After simulation in Vivado software, the resulting waveform is as follows:
 
 - The mechanism for delaying the assignment of a new value to the left-hand signal in assignment statements is called <span style="color:blue">_**timing**_</span>. This is done using the <span style="color:blue">_**after**_</span>. keyword. This feature makes circuit simulation closer to reality, although it is ignored in circuit synthesis and has no effect on the final circuit.
 
-- After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./2.halfadder_delay/result.JPG)
 
