@@ -183,7 +183,7 @@ After simulation in Vivado software, the resulting waveform is as follows:
 
 - More than one Architecture with different names can be defined for an Entity.
 
--  After simulation in Vivado software, the resulting waveform is as follows:
+After simulation in Vivado software, the resulting waveform is as follows:
 <br>
 ![image info](./12.two_architecture/result.JPG)
 
