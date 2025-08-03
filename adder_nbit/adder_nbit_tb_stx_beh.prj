@@ -1,2 +1,0 @@
-vhdl isim_temp "adder_nbit.vhd"
-vhdl isim_temp "adder_nbit_tb.vhd"
