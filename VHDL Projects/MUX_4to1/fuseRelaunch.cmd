@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/CHAPTER_THREE/MUX_4to1/MUX_4to1_tb_isim_beh.exe" -prj "F:/verilog/CHAPTER_THREE/MUX_4to1/MUX_4to1_tb_beh.prj" "work.MUX_4to1_tb" 

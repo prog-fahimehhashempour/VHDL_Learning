@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/CHAPTER_THREE/inverter/inverter_tb_isim_beh.exe" -prj "F:/verilog/CHAPTER_THREE/inverter/inverter_tb_beh.prj" "work.inverter_tb" 

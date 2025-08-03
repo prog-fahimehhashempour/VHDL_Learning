@@ -1,0 +1,2 @@
+vhdl isim_temp "inverter.vhd"
+vhdl isim_temp "inverter_tb.vhd"
