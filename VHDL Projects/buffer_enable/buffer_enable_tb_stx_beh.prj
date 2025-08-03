@@ -1,0 +1,2 @@
+vhdl isim_temp "buffer_enable.vhd"
+vhdl isim_temp "buffer_enable_tb.vhd"

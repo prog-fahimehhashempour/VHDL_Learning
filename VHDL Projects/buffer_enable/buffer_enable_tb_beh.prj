@@ -1,0 +1,2 @@
+vhdl work "buffer_enable.vhd"
+vhdl work "buffer_enable_tb.vhd"

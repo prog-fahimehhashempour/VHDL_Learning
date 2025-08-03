@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/CHAPTER_THREE/buffer_enable/buffer_enable_tb_isim_beh.exe" -prj "F:/verilog/CHAPTER_THREE/buffer_enable/buffer_enable_tb_beh.prj" "work.buffer_enable_tb" 
