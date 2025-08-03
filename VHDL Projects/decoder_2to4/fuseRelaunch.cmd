@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/CHAPTER_THREE/decoder_2to4/decoder_2to4_tb_isim_beh.exe" -prj "F:/verilog/CHAPTER_THREE/decoder_2to4/decoder_2to4_tb_beh.prj" "work.decoder_2to4_tb" 
