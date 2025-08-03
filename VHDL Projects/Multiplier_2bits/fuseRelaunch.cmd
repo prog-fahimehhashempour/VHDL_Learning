@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/VHDL Projects main/Multiplier_2bits/Multiplier_2bits_tb_isim_beh.exe" -prj "F:/verilog/VHDL Projects main/Multiplier_2bits/Multiplier_2bits_tb_beh.prj" "work.Multiplier_2bits_tb" 

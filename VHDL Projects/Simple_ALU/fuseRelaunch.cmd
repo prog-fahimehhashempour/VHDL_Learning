@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/VHDL Projects main/Simple_ALU/Simple_ALU_tb_isim_beh.exe" -prj "F:/verilog/VHDL Projects main/Simple_ALU/Simple_ALU_tb_beh.prj" "work.Simple_ALU_tb" 
