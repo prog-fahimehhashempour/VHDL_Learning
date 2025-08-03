@@ -1,0 +1,2 @@
+vhdl work "compare_nbit.vhd"
+vhdl work "compare_nbit_tb.vhd"

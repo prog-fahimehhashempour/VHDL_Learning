@@ -1,0 +1,2 @@
+vhdl isim_temp "compare_nbit.vhd"
+vhdl isim_temp "compare_nbit_tb.vhd"

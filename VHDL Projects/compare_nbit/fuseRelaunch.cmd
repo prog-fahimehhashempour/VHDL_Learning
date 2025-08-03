@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/verilog/CHAPTER_THREE/compare_nbit/compare_nbit_tb_isim_beh.exe" -prj "F:/verilog/CHAPTER_THREE/compare_nbit/compare_nbit_tb_beh.prj" "work.compare_nbit_tb" 
